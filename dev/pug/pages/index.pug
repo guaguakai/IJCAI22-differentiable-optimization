@@ -13,17 +13,17 @@ block body-content
   header.page-header.js-header
     .page-header__inner
       .page-header__logo
-        h1 Bak-one
+        h1 IJCAI 2022
         | &nbsp;
-        span One page flat template
+        span Tutorial: Differentiable Optimization
       nav.page-header__nav.js-nav
         ul
           li
             a.page-header__nav-link.js-anchor.js-link.is-active(href='#home') Home
           li
-            a.page-header__nav-link.js-anchor.js-link(href='#portfolio') Portfolio
+            a.page-header__nav-link.js-anchor.js-link(href='#portfolio') Tutorial
           li
-            a.page-header__nav-link.js-anchor.js-link(href='#team') About
+            a.page-header__nav-link.js-anchor.js-link(href='#team') Team
           li
             a.page-header__nav-link.js-anchor.js-link(href='#contact') Contact
 
@@ -31,18 +31,29 @@ block body-content
   // $Promo section
   section#home.promo.js-jumbo
     h2.promo__title
-      | We build
-      span brand
-    p.promo__descr Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    a.promo__btn(href='#') Learn more
+      | 
+      h1 IJCAI 2022 Tutorial;
+      h2 Differentiable Optimization: Integrating Structural Information into Training Pipeline
+
     a.promo__go-next.js-anchor(href='#portfolio') Scroll down
 
 
   // $Portfolio section
   section#portfolio.portfolio.js-portfolio
     .portfolio__inner
-      h2.portfolio__title Portfolio
-      p.portfolio__descr Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      h2.portfolio__title Abstract
+      p.portfolio__descr Structural information and domain knowledge are two necessary components of training a good machine learning model to maximize the performance in the targeted application. This tutorial summarizes how to use optimization as a differentiable building block to incorporate the non-trivial operational information in applications into machine learning models.
+
+      h2.portfolio__title Tutorial Description
+      p.portfolio__descr 
+        | Machine learning models have achieved significant success in many industrial applications and social challenges, including natural language processing, computer vision, time series analysis, and recommendation systems. To adapt to different applications, incorporating structural information and domain knowledge in applications into machine learning models is an important element of the training process. But it often relies on fine-tuning and feature-engineering without a systematic approach to adapt to various applications. On the other hand, operational research is an application-driven approach, where optimization problems are formulated based on the knowledge and constraints of targeted applications to derive actionable solutions. Optimization formulations can capture structural information and domain knowledge in applications, but the non-differentiability and the complex operational processes in optimization make it hard to integrate into machine learning models.
+      
+      p.portfolio__descr
+        | This tutorial starts from the foundation of differentiable optimization to discuss how to convert optimization into differentiable building blocks to use in larger architectures. The direct benefit of differentiable optimization is to integrate structural information and domain knowledge in optimization formulations into machine learning models. The first part of the tutorial covers a variety of applications using optimization as differentiable units in machine learning models to properly handle operational tasks in reinforcement learning, control, optimal transport, and geometry. Experiments demonstrate that differentiable optimization can model operational processes more efficiently than neural networks. The second part of the tutorial focuses on integrating various industrial and social challenges as differentiable optimization layers into the training pipeline. This integration of machine learning models and application-driven optimization leads to end-to-end learning, decision-focused learning, that trains models to directly optimize the performance in targeted applications. Lastly, the tutorial concludes with a series of applications of differentiable optimization and its computational limitations with various open directions left to the audiences.
+
+
+
+      h2.portfolio__title Related Materials
       nav.portfolio__filter
         ul
           li.portfolio__filter-btn.is-selected.js-filter(data-filter='all') All
@@ -106,50 +117,45 @@ block body-content
       h2.team__title About us
       p.team__descr Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
       .team__member
-        img(src='static/images/ava1.jpg', alt='Melanie Doe')
+        img(src='static/images/kai.png', alt='Kai Wang')
         .team__member-info
-          h3.team__member-name Melannie Doe
-          span.team__member-role Project manager
+          h3.team__member-name Kai Wang
+          span.team__member-role Harvard University
           p.team__member-descr
-            | Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            | I am a 5th-year Ph.D. in Computer Science at Harvard University focusing on differentiable optimization and machine learning.
         ul.team__member-soc
           li
-            a.team__member-icon.fb(href='#') My Facebook
+            a.team__member-icon.tw(href='https://twitter.com/kaiwang_gua') Follow me on twitter
           li
-            a.team__member-icon.tw(href='#') Follow me on twitter
-          li
-            a.team__member-icon.gplus(href='#') My Google+
+            a.team__member-icon.gplus(href='https://scholar.google.com/citations?user=gGSsQmsAAAAJ&hl=en') My Google+
           li
             a.team__member-icon.db(href='#') I am on Dribble
       .team__member
-        img(src='static/images/ava2.jpg', alt='Jhonie Doe')
+        img(src='static/images/andrew.jpg', alt='Andrew Perrault')
         .team__member-info
-          h3.team__member-name Jhonnie Doe
-          span.team__member-role Graphic designer
+          h3.team__member-name Andrew Perrault
+          span.team__member-role The Ohio State University
           p.team__member-descr
-            | Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            | I am an assistant professor in the Department of Computer Science and Engineering at The Ohio State University.
         ul.team__member-soc
           li
-            a.team__member-icon.fb(href='#') My Facebook
+            a.team__member-icon.tw(href='https://twitter.com/PerraultAndrew') Follow me on twitter
           li
-            a.team__member-icon.tw(href='#') Follow me on twitter
-          li
-            a.team__member-icon.gplus(href='#') My Google+
+            a.team__member-icon.gplus(href='https://scholar.google.com/citations?user=2eWscBQAAAAJ&hl=en&oi=ao') My Google+
           li
             a.team__member-icon.db(href='#') I am on Dribble
       .team__member
-        img(src='static/images/ava3.jpg', alt='Daniel Doe')
+        img(src='static/images/brandon.png', alt='Brandon Amos')
         .team__member-info
-          h3.team__member-name Daniel Doe
-          span.team__member-role Web designer
-          p.team__member-descr Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          h3.team__member-name Brandon Amos
+          span.team__member-role Facebook AI (FAIR)
+          p.team__member-descr
+            | I am a research scientist at Facebook AI (FAIR) in NYC and study foundational topics in machine learning and optimization.
         ul.team__member-soc
           li
-            a.team__member-icon.fb(href='#') My Facebook
+            a.team__member-icon.tw(href='https://twitter.com/brandondamos') Follow me on twitter
           li
-            a.team__member-icon.tw(href='#') Follow me on twitter
-          li
-            a.team__member-icon.gplus(href='#') My Google+
+            a.team__member-icon.gplus(href='https://scholar.google.com/citations?user=d8gdZR4AAAAJ') My Google+
           li
             a.team__member-icon.db(href='#') I am on Dribble
 
@@ -158,30 +164,8 @@ block body-content
   section#contact.contact
     .contact__inner
       h2.contact__title Contact us
-      p.contact__descr Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-      form.contact__form(action='#', method='post')
-        input#name.contact__form-input(type='text', name='name', placeholder='Your name')
-        input#email.contact__form-input(type='email', name='email', placeholder='Your email')
-        textarea#message.contact__form-tarea(name='message', placeholder='Your message')
-        input.contact__form-submit(type='submit', value='Submit')
-      .contact__card.vcard
-        h3.contact__card-title Information
-        .contact__card-item.place
-          .fn.org Bak-One Company
-          .adr
-            .street-address 12345 Hollywood Bvld Street
-            span.locality Los Angeles
-            | ,
-            span.region California
-        .contact__card-item.tel
-          | +444
-          span.type &nbsp;(Phone)&nbsp;
-          | 123456
-        .contact__card-item.fax.tel
-          | +123
-          span.type &nbsp;(FAX)&nbsp;
-          | 0011223
-        a.contact__card-item.email(href='#') info@companyname.com
+      p.contact__descr Kai Wang &nbsp | &nbsp 
+        a.contact__card-item.email kaiwang@g.harvard.edu
 
 
   // $Page footer
