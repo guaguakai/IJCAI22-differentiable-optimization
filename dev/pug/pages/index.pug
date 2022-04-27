@@ -30,10 +30,12 @@ block body-content
 
   // $Promo section
   section#home.promo.js-jumbo
-    h2.promo__title
+    h1.promo__title
       | 
-      h1 IJCAI 2022 Tutorial;
-      h2 Differentiable Optimization: Integrating Structural Information into Training Pipeline
+      span IJCAI 2022 Tutorial;
+    h2.promo__title
+      |
+      span Differentiable Optimization: Integrating Structural Information into Training Pipeline
 
     a.promo__go-next.js-anchor(href='#portfolio') Scroll down
 
@@ -48,8 +50,7 @@ block body-content
       p.portfolio__descr 
         | Machine learning models have achieved significant success in many industrial applications and social challenges, including natural language processing, computer vision, time series analysis, and recommendation systems. To adapt to different applications, incorporating structural information and domain knowledge in applications into machine learning models is an important element of the training process. But it often relies on fine-tuning and feature-engineering without a systematic approach to adapt to various applications. On the other hand, operational research is an application-driven approach, where optimization problems are formulated based on the knowledge and constraints of targeted applications to derive actionable solutions. Optimization formulations can capture structural information and domain knowledge in applications, but the non-differentiability and the complex operational processes in optimization make it hard to integrate into machine learning models.
       
-      p.portfolio__descr
-        | This tutorial starts from the foundation of differentiable optimization to discuss how to convert optimization into differentiable building blocks to use in larger architectures. The direct benefit of differentiable optimization is to integrate structural information and domain knowledge in optimization formulations into machine learning models. The first part of the tutorial covers a variety of applications using optimization as differentiable units in machine learning models to properly handle operational tasks in reinforcement learning, control, optimal transport, and geometry. Experiments demonstrate that differentiable optimization can model operational processes more efficiently than neural networks. The second part of the tutorial focuses on integrating various industrial and social challenges as differentiable optimization layers into the training pipeline. This integration of machine learning models and application-driven optimization leads to end-to-end learning, decision-focused learning, that trains models to directly optimize the performance in targeted applications. Lastly, the tutorial concludes with a series of applications of differentiable optimization and its computational limitations with various open directions left to the audiences.
+        <br> <br> This tutorial starts from the foundation of differentiable optimization to discuss how to convert optimization into differentiable building blocks to use in larger architectures. The direct benefit of differentiable optimization is to integrate structural information and domain knowledge in optimization formulations into machine learning models. The first part of the tutorial covers a variety of applications using optimization as differentiable units in machine learning models to properly handle operational tasks in reinforcement learning, control, optimal transport, and geometry. Experiments demonstrate that differentiable optimization can model operational processes more efficiently than neural networks. The second part of the tutorial focuses on integrating various industrial and social challenges as differentiable optimization layers into the training pipeline. This integration of machine learning models and application-driven optimization leads to end-to-end learning, decision-focused learning, that trains models to directly optimize the performance in targeted applications. Lastly, the tutorial concludes with a series of applications of differentiable optimization and its computational limitations with various open directions left to the audiences.
 
 
 
