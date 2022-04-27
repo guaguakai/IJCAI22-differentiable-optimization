@@ -33,5 +33,7 @@
     "run-sequence": "^2.2.1",
     "vinyl-paths": "^2.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "package.json": "^2.0.1"
+  }
 }
