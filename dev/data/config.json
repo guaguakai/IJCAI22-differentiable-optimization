@@ -1,10 +1,10 @@
 {
   "site": {
     "lang": "en",
-    "title": "Design studio template",
+    "title": "IJCAI 2022 Tutorial: Differentiable Optimization: Integrating Structural Information into Training Pipeline",
     "titleDelim": " | ",
-    "description": "Free responsive flat designed one page template",
-    "keywords": "html template, theme, freebie, opensource",
+    "description": "IJCAI 2022 Tutorial: Differentiable Optimization: Integrating Structural Information into Training Pipeline",
+    "keywords": "IJCAI, tutorial, differentiable optimization",
     "url": "http://guaguakai.github.io/IJCAI22-differentiable-optimization"
   },
   "modules": {
